@@ -13,11 +13,11 @@ public class ConversorDeMedidas {
 		}
 		if("kg".equals(toConvert)) {
 			resultado = resultado / massaK;
-			saida = String.valueOf(resultado)+ "lb";
+			saida = String.valueOf(resultado)+ "kg";
 		}
 		if("lb".equals(toConvert)) {
 			resultado = resultado * massaK;
-			saida = String.valueOf(resultado)+ "kg";
+			saida = String.valueOf(resultado)+ "lb";
 			
 		}
 		return saida;
@@ -37,11 +37,11 @@ public class ConversorDeMedidas {
 		}
 		if("C".equals(toConvert)) {
 			resultado = (resultado-32) / temperaturaK2;
-			saida = String.valueOf(resultado)+ "F";
+			saida = String.valueOf(resultado)+ "C";
 		}
 		if("F".equals(toConvert)) {
 			resultado = resultado * temperaturaK2 + temperaturaK1;
-			saida = String.valueOf(resultado)+ "C";
+			saida = String.valueOf(resultado)+ "F";
 		}
 		return saida;
 	}
@@ -59,11 +59,11 @@ public class ConversorDeMedidas {
 		}
 		if("mi".equals(toConvert)) {
 			resultado = resultado / distanciaK;
-			saida = String.valueOf(resultado)+ "km";
+			saida = String.valueOf(resultado)+ "mi";
 		}
 		if("km".equals(toConvert)) {
 			resultado = resultado * distanciaK;
-			saida = String.valueOf(resultado)+ "mi";
+			saida = String.valueOf(resultado)+ "km";
 		}
 		return saida;
 	}
