@@ -32,6 +32,19 @@ public class Estatistica {
 		return acumulado / (this.maiorValor+1.0);
 	}
 	
+	public void paresImpares() {
+		int x = 0;
+		while(x < this.maiorValor) {
+			if(x%2 == 0) {
+				System.out.printf("%d é par\n", x);
+			}
+			else {
+				System.out.printf("%d é impar\n", x);
+			}
+			x++;
+		}
+	}
+	
 	
 
 	public static void main(String[] args) {
@@ -39,9 +52,14 @@ public class Estatistica {
 		System.out.println("Digite o valor:");
 		Scanner input = new Scanner(System.in);
 		Estatistica estat = new Estatistica(input.nextInt());
+		System.out.println("Somatorio:");
 		System.out.println(estat.somatorio());
+		System.out.println("Media:");
 		System.out.println(estat.media());
+		System.out.println("Variancia:");
 		System.out.println(estat.variancia());
+		estat.paresImpares();
+		
 		input.close();
 
 	}
