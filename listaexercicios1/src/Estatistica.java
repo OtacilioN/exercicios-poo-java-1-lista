@@ -36,6 +36,7 @@ public class Estatistica {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Digite o valor:");
 		Scanner input = new Scanner(System.in);
 		Estatistica estat = new Estatistica(input.nextInt());
 		System.out.println(estat.somatorio());
