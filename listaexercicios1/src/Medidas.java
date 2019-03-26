@@ -1,8 +1,8 @@
 
 public class Medidas {
-	String unidadeDeDistancia, unidadeDeMassa, unidadeDeTemperatura;
-	double distancia, massa;
-	int temperatura;
+	private String unidadeDeDistancia, unidadeDeMassa, unidadeDeTemperatura;
+	private double distancia, massa;
+	private int temperatura;
 	
 	public Medidas(){
 		

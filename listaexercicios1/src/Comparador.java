@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Comparador {
 	
-	int atributo1, atributo2, atributo3; 
+	private int atributo1, atributo2, atributo3; 
 	
 	public int getAtributo1(){
 		return this.atributo1;
